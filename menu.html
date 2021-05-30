@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twst</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/animation.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/loginre.css"/>
+  <script type="text/javascript" src="assets/js/wow.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/loginre.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+</head>
+<style>
+/** @media (min-width: 600px) {
+  .c1 {
+    background-color: red;
+    width: 50%;
+    order: 2;
+    padding-left: 1%;
+    padding-top:0.5%;
+
+  }
+  .c1-1{
+    background-color: yellow;
+    width: 10px;
+  }
+  .c2 {
+    background-color: green;
+    width: 40%;
+    order: 1;
+  }
+
+  .c3 {
+    background-color: blue;
+    width: 100%;
+    order: 3;
+     height: 10vw;
+  }
+}**/
+@media (min-width: 800px) {
+  .c1 {
+        /**background-color: red;**/
+    padding-left: 2%;
+    padding-top: 0.7%;
+    width: 100%;
+    height: 70px;
+    padding-right: 2%;
+    border: none none none double;
+  }
+  .c1-1{
+
+    background: url("assets/img/logo.png")center center no-repeat ;
+    background-size: 100px 85%;
+    /**background-color: yellow;**/
+    width: 20%;
+    height: 70px;
+    display: inline-block;
+  }
+  .c1-2{
+    float: right;
+    /*background-color: yellow;*/
+    width: 30%;
+    display: inline-block;
+    height: 50px;
+    margin-top: 10px;
+ 
+
+  }
+  a{
+    color:  black;
+  }
+  a:hover{
+    text-decoration:none;
+   
+  }
+
+   .c1-2-1{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 15%;
+    height:50px;
+
+  }
+
+     .c1-2-2{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 40%;
+    height:50px;
+  }
+  .c1-2-2{
+        text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 28%;
+    height:50px;
+
+  }
+  .c1-2-3{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 20%;
+    height:50px;
+    /**background-color: green;**/
+  }
+    .c1-2-4{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 35%;
+    height:50px;
+    /**background-color: green;**/
+  }
+  .c1-2-3:hover{
+    color: red;
+
+  }
+  .c2 {
+
+   /** background-color: green;**/
+    width: 100%;
+    height: 30vw ;
+  }
+
+  .c3 {
+    /**background-color: blue;**/
+    width: 100%;
+    height: 40vw;
+    text-align: center;
+
+  }
+  .c3-1{
+    background-color: #FCFCFC;
+    height: 35vw;
+    width: 90%;
+    display: inline-block;
+    margin: 0px auto;
+    margin-top: -1.2%;
+      box-shadow:  10px 10px 20px #ADADAD;
+  border-radius: 15px 15px;
+  opacity: 0.5;
+ 
+  }
+  .c3-1-title{
+    padding-left: 6%;
+    margin-top: 3%;
+    width: 90%;
+    height: 90px;
+    opacity: 0.1;
+    font-size: 80px;
+    text-align: left;
+  }
+  .c3-2{
+    color: black;
+    padding-top: 100px;
+    width: 50%;
+    /**background-color: red;**/
+    height: 35vw;
+    display:inline-block;
+    float: left;
+    word-wrap:break-word;
+
+  }
+    .c3-2-2{
+      padding-left: 60px;
+      padding-top: 100px;
+    width: 50%;
+   /** background-color: green;**/
+    height: 35vw;
+    display:inline-block;
+    border-left:1px solid lightgrey;
+    float: right;
+}
+.c3-2-2 ul{
+  list-style-type: decimal;
+}
+.c3-3{
+  height: 35vw;width: 50%;display: inline-block;padding-top: 80px;overflow-wrap: break-word;
+}
+.c3-3 li{
+  list-style-type: none;
+}
+.c3-3 ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+  }
+  .f1{
+    font-size: 12px;
+    width: 100%;
+    height:30vw;
+    /**background-color: #E8F2EE;**/
+    background-color: #EAF0ED;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+  }
+
+  #id_wrapper {
+  /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+  min-height: 100%;
+  height: auto;
+  /* 位置設為relative, 作為footer區塊位置的參考 */
+  position: relative;
+  }
+  #id_content {
+  /* 留出header及footer區塊的空間 */
+  padding-top: 20px;
+  padding-bottom: 210px;/*預留footer的高度*/
+  }
+.c2-bg{
+  /* 設定背景圖片/居中/不重覆 */
+  background: url("assets/img/pic1.jpg")center center no-repeat;
+/* 設定區塊高度 */
+  min-height: 600px;
+/* 背景自動縮放/固定 */
+  background-attachment: fixed;
+  background-size: cover;
+}
+.c2-find{
+  margin-top: 15%;
+  display: inline-block;
+  margin-left: 3%;
+  background: white;
+  height: 25vw;
+  width: 35%;
+  box-shadow: 5px 5px 40px 5px #9D9D9D;
+  border-radius: 15px 15px;
+  opacity: 0.7;
+
+  }
+  .container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+  }
+ 
+  .container-4:hover button.icon:hover{
+    background: white;
+  }
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  padding-top:50px;
+  margin-top: 15%;
+  text-align: center;
+}
+.container-1 input#search{
+  height: 50px;
+  width: 65%;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 15px;
+  z-index: 1;
+  color: #4f5b66;
+}
+  .slider {
+    padding-left: 0;
+    padding-top:20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .slick-slide {
+      margin: 0px auto;
+    }
+
+    .slick-slide img {
+      margin: 0 auto;
+      width: 80%;
+      border: 3px white solid;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.30);
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+
+
+.titlearea{
+  font-size: 25px;
+  padding: 10px 10px;
+ text-align: left;
+  width: 75%;
+  height:4vw;
+  display: inline-block;
+  
+  /**background-color: white;**/
+}
+.c2title{
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  height:4vw;
+ /** background-color: pink;**/
+}
+
+.good{
+  margin-top: -28px;
+  background-color:hsl(139, 33%, 92%);
+  
+  z-index: -1;
+  width: 100%;
+  height: 28vw;
+}
+.good2{
+  margin-top: -28px;
+  background-color:hsl(34, 38%, 95%);
+  
+  z-index: -1;
+  width: 100%;
+  height: 25vw;
+}
+.goood2{
+  margin-top: -28px;
+
+  
+  z-index: -1;
+  width: 100%;
+  height: 25vw;
+}
+.goodarea{
+  width: 70%;
+  margin:0 auto;
+  height: 25vw;
+  /*background-color: white;*/
+}
+.goodpic{
+
+width: 31%;
+height: 25vw;
+/*background-color: green;*/
+float: left;
+margin: 0 auto;
+margin-left: 20px;
+padding-top: 35px;
+padding-left: 50px;
+}
+.goodpic img{
+  border: 7px white solid;
+  width: 85%;
+  height: 70%;
+}
+.post  {
+
+overflow: hidden;
+width: 800px;
+height: 600px;
+}
+
+/*轉場的時間*/
+.post img {
+
+transition: all 0.5s ease 0s;
+}
+
+/*判斷滑鼠的動作放大圖片還有增加透明度*/
+.post img:hover {
+-moz-transform: scale(1.05);
+-ms-transform: scale(1.05);
+-o-transform: scale(1.05);
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
+opacity: .5;
+}
+.wei-grid {
+
+    overflow: hidden;
+}
+
+.wei-image1 {
+    transition: transform 1s ease;
+    width: 50%;
+    height:50%;
+}
+
+.wei-grid:hover .wei-image1, .wei-grid:focus .wei-image1 {
+    transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+}
+}
+</style>
+
+<body> 
+
+<div id="id_wrapper">
+  <header>
+    <div class="c1">
+      <a href="untitled.html"><div class="c1-1"></div></a>
+
+      <div class="c1-2" >
+        <div class="c1-2-1">
+          <a href="ex.html"><i class="fas fa-shopping-cart fa-1x"></i></a>
+        </div>
+
+        <div class="c1-2-3">
+          <a href="menu.html"><span style="font-style: sans-serif;"> MENU </span></a>
+
+
+      </div>
+
+    </div>
+  </header> 
+
+<div id="id_content">
+  <div style="width: 100%;height: 60px;text-align: center;">
+    <div style="width: 40%; margin: 0 auto; ">
+    <div style="display: inline-block; margin-left:10px;height: 50px;width: 50px;">
+      <a href="#fruit"><img style="border-radius: 8px;box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.6);" src="assets/img/chicken.jpg" height="50" width="50"></a>
+      <span style="font-size: 10pt;">水果</span>
+    </div>
+
+    <div style="display: inline-block;margin-left:10px;height: 50px;width: 50px;">
+      <a href="#fish"><img style="border-radius: 8px;box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.6);"  src="assets/img/fish.jpg" height="50" width="50"></a>
+      <span style="font-size: 10pt;">魚類</span>
+    </div>
+    <div style="display: inline-block;margin-left:10px;height: 50px;width: 50px;">
+     <a href="#ve"> <img style="border-radius: 8px;box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.6);"  src="assets/img/ve.jpg" height="50" width="50"></a>
+      <span style="font-size: 10pt;">蔬菜類</span>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="c2">
+    <div class="c2title">
+      <div class="titlearea">
+        優惠主打星 <i class="fas fa-star fa-1x" style="color: #FFD306;"></i>
+      </div>
+    </div>
+      <ul class="slider autoplay">
+        <li><img  src="assets/img/hot1.jpg" height="190" width="165" >
+          <div style=" height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>鮮炒蛤蜊</b><br>
+            <span style="font-size: 12px;color: grey;">煎炒類</span><br>
+             <span style="font-size: 12px;color: grey;">蛤蜊600g、老薑40g、去皮蒜頭30g</span><br>
+            <span style="font-size: 12px;"><b>＄109</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </li>
+        <li><img src="assets/img/hot2.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>涼拌小白菜</b><br>
+            <span style="font-size: 12px;color: grey;">煎炒類</span><br>
+             <span style="font-size: 12px;color: grey;">小白菜600g、柴魚片1小包、去皮蒜頭20g</span><br>
+            <span style="font-size: 12px;"><b>＄64</b></span>
+                        <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+        <li><img src="assets/img/hot3.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>鳳梨苦瓜雞</b><br>
+            <span style="font-size: 12px;color: grey;">湯品類</span><br>
+             <span style="font-size: 12px;color: grey;">鳳梨一顆、白苦瓜一條、去顧雞腿肉600g、蔥50g、老薑20g</span><br>
+            <span style="font-size: 12px;"><b>＄278</b></span>
+                        <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+        <li><img src="assets/img/hot4.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>乾煎鱸魚</b><br>
+            <span style="font-size: 12px;color: grey;">煎炒類</span><br>
+            <span style="font-size: 12px;color: grey;">鱸魚片600g、馬鈴薯1顆、中蘆筍150g、去皮算頭30g</span><br>
+            <span style="font-size: 12px;"><b>＄399</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+        <li><img src="assets/img/hot5.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>蒜香瓦片骰子牛</b><br>
+            <span style="font-size: 12px;color: grey;">煎炒類</span><br>
+            <span style="font-size: 12px;color: grey;">牛小排300g、去皮算頭30g</span><br>
+            <span style="font-size: 12px;"><b>＄400</b></span>
+                        <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+        <li><img src="assets/img/hot6.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>滷味組合</b><br>
+            <span style="font-size: 12px;color: grey;">滷類</span><br>
+             <span style="font-size: 12px;color: grey;">軟排骨300g、滷大腸300g、豆乾300g、海帶結150g、辣椒一隻</span><br>
+            <span style="font-size: 12px;"><b>＄289</b></span>
+                        <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+      </ul>
+  </div>
+
+  <div class="c2">
+    <div class="c2title">
+      <div class="titlearea">
+        嚴選組合 <i class="fas fa-utensils" style="color: #BCC884;"></i>
+      </div>
+    </div>
+ 
+    <div class="good">
+      <div class="goodarea">
+              <ul class="slider filtering">
+       <li><img  src="assets/img/hot1.jpg" height="190" width="165" >
+          <div style=" height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>鮮炒蛤蜊</b><br>
+            <span style="font-size: 12px;color: grey;">煎炒類</span><br>
+             <span style="font-size: 12px;color: grey;">蛤蜊600g、老薑40g、去皮蒜頭30g</span><br>
+            <span style="font-size: 12px;"><b>＄109</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </li>
+        <li><img src="assets/img/hot2.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>涼拌小白菜</b><br>
+            <span style="font-size: 12px;color: grey;">煎炒類</span><br>
+             <span style="font-size: 12px;color: grey;">小白菜600g、柴魚片1小包、去皮蒜頭20g</span><br>
+            <span style="font-size: 12px;"><b>＄64</b></span>
+                        <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+        <li><img src="assets/img/hot3.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>鳳梨苦瓜雞</b><br>
+            <span style="font-size: 12px;color: grey;">湯品類</span><br>
+             <span style="font-size: 12px;color: grey;">鳳梨一顆、白苦瓜一條、去顧雞腿肉600g、蔥50g、老薑20g</span><br>
+            <span style="font-size: 12px;"><b>＄278</b></span>
+                        <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+        <li><img src="assets/img/hot4.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>乾煎鱸魚</b><br>
+            <span style="font-size: 12px;color: grey;">煎炒類</span><br>
+            <span style="font-size: 12px;color: grey;">鱸魚片600g、馬鈴薯1顆、中蘆筍150g、去皮算頭30g</span><br>
+            <span style="font-size: 12px;"><b>＄399</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+        <li><img src="assets/img/hot5.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>蒜香瓦片骰子牛</b><br>
+            <span style="font-size: 12px;color: grey;">煎炒類</span><br>
+            <span style="font-size: 12px;color: grey;">牛小排300g、去皮算頭30g</span><br>
+            <span style="font-size: 12px;"><b>＄400</b></span>
+                        <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+        <li><img src="assets/img/hot6.jpg" height="190" width="165">
+          <div style="height: 100px;width: 80%;margin: 0 auto;padding-top: 8px;padding-left: 10px;">
+            <b>滷味組合</b><br>
+            <span style="font-size: 12px;color: grey;">滷類</span><br>
+             <span style="font-size: 12px;color: grey;">軟排骨300g、滷大腸300g、豆乾300g、海帶結150g、辣椒一隻</span><br>
+            <span style="font-size: 12px;"><b>＄289</b></span>
+                        <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+
+          </div>
+        </li>
+      </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+   <div class="c2">
+    <div class="c2title">
+      <div class="titlearea">
+        超人氣單品 <i class="fab fa-hotjar" style="color: #CE0000;"></i></i>
+      </div>
+    </div>
+ 
+    <div class="good2">
+      <div class="goodarea">
+        <div class="goodpic wei-grid" >
+          <img class="wei-image1" src="assets/img/good1.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>水蓮</b><br>
+            <span style="font-size: 12px;color: grey;">青菜類</span><br>
+            <span style="font-size: 12px;"><b>＄45 / 包</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+        <div class="goodpic wei-grid">
+          <img class="wei-image1" src="assets/img/good2.png">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>青花菜</b><br>
+            <span style="font-size: 12px;color: grey;">青菜類</span><br>
+            <span style="font-size: 12px;"><b>＄59 / 顆</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+        <div class="goodpic wei-grid">
+          <img class="wei-image1" src="assets/img/good3.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>鴻禧菇</b><br>
+            <span style="font-size: 12px;color: grey;">菇類</span><br>
+            <span style="font-size: 12px;"><b>＄30</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+   <div class="c2">
+    <div class="c2title">
+      <div class="titlearea">
+        水果 <i class="fab fa-hotjar" style="color: #CE0000;"></i></i>
+      </div>
+    </div>
+ 
+    <div id="fruit" class="goood2">
+      <div class="goodarea">
+        <div class="goodpic wei-grid" >
+          <img class="wei-image1" src="assets/img/bana.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>香蕉</b><br>
+            <span style="font-size: 12px;color: grey;">水果類</span><br>
+            <span style="font-size: 12px;"><b>＄60</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+        <div class="goodpic wei-grid">
+          <img class="wei-image1" src="assets/img/gua.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>芭樂</b><br>
+            <span style="font-size: 12px;color: grey;">水果類</span><br>
+            <span style="font-size: 12px;"><b>＄69</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+        <div class="goodpic wei-grid">
+          <img class="wei-image1" src="assets/img/papa.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>木瓜</b><br>
+            <span style="font-size: 12px;color: grey;">水果類</span><br>
+            <span style="font-size: 12px;"><b>＄49</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="c2">
+    <div class="c2title">
+      <div class="titlearea">
+        魚類 <i class="fab fa-hotjar" style="color: #CE0000;"></i></i>
+      </div>
+    </div>
+ 
+    <div id="fish" class="goood2">
+      <div class="goodarea">
+        <div class="goodpic wei-grid" >
+          <img class="wei-image1" src="assets/img/fish1.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>吳郭魚</b><br>
+            <span style="font-size: 12px;color: grey;">魚類</span><br>
+            <span style="font-size: 12px;"><b>＄400</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+        <div class="goodpic wei-grid">
+          <img class="wei-image1" src="assets/img/fish2.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>鮭魚</b><br>
+            <span style="font-size: 12px;color: grey;">魚類</span><br>
+            <span style="font-size: 12px;"><b>＄400</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+        <div class="goodpic wei-grid">
+          <img class="wei-image1" src="assets/img/fish3.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>七星鱸</b><br>
+            <span style="font-size: 12px;color: grey;">魚類</span><br>
+            <span style="font-size: 12px;"><b>＄400</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="c2">
+    <div class="c2title">
+      <div class="titlearea">
+        蔬菜類 <i class="fab fa-hotjar" style="color: #CE0000;"></i></i>
+      </div>
+    </div>
+ 
+    <div id="ve" class="goood2">
+      <div class="goodarea">
+        <div class="goodpic wei-grid" >
+          <img class="wei-image1" src="assets/img/vege1.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>地瓜葉</b><br>
+            <span style="font-size: 12px;color: grey;">青菜類</span><br>
+            <span style="font-size: 12px;"><b>＄30</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+        <div class="goodpic wei-grid">
+          <img class="wei-image1" src="assets/img/good2.png">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>A菜</b><br>
+            <span style="font-size: 12px;color: grey;">青菜類</span><br>
+            <span style="font-size: 12px;"><b>＄40</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+        <div class="goodpic wei-grid">
+          <img class="wei-image1" src="assets/img/good3.jpg">
+            <div style="height: 100px;width: 80%;padding-top: 8px;padding-left: 8px;">
+            <b>大陸妹</b><br>
+            <span style="font-size: 12px;color: grey;">青菜類</span><br>
+            <span style="font-size: 12px;"><b>＄30</b></span>
+            <span style="float: right;"><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+  <footer>
+    <div class="f1" >
+    Copyright © 2020 Interest Company. All rights reserved<br>
+   <i class="fas fa-building"></i>：No. 200, Zhongbei Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)<br>
+   <i class="fas fa-phone"></i>：0910-622-373 </a>
+
+    </div>
+  </footer>
+
+
+ </div>
+
+
+  <script> new WOW().init();</script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.js"></script>
+<script>
+
+$('.filtering').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4
+});
+
+var filtered = false;
+
+$('.js-filter').on('click', function(){
+  if (filtered === false) {
+    $('.filtering').slick('slickFilter',':even');
+    $(this).text('Unfilter Slides');
+    filtered = true;
+  } else {
+    $('.filtering').slick('slickUnfilter');
+    $(this).text('Filter Slides');
+    filtered = false;
+  }
+});
+
+
+$('.autoplay').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 900,
+});</script>
+</body>
+</html>

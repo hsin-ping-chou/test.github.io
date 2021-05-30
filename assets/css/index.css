@@ -1,0 +1,212 @@
+
+@media (min-width: 800px) {
+  .c1 {
+        /**background-color: red;**/
+    padding-left: 2%;
+    padding-top: 0.7%;
+    width: 100%;
+    height: 70px;
+    padding-right: 2%;
+    border: none none none double;
+  }
+
+  .c1-2{
+    float: right;
+    /**background-color: yellow;**/
+    width: 30%;
+    display: inline-block;
+    height: 50px;
+    margin-top: 10px;
+ 
+
+  }
+  a{
+    color:  black;
+  }
+  a:hover{
+    text-decoration:none;
+   
+  }
+
+   .c1-2-1{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 15%;
+    height:50px;
+
+  }
+
+     .c1-2-2{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 40%;
+    height:50px;
+  }
+  .c1-2-2{
+        text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 28%;
+    height:50px;
+
+  }
+  .c1-2-3{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 20%;
+    height:50px;
+    /**background-color: green;**/
+  }
+  .c1-2-3:hover{
+    color: red;
+
+  }
+  .c2 {
+    background-color: green;
+    width: 100%;
+    height: 600px ;
+  }
+  .c3 {
+    /**background-color: blue;**/
+    width: 100%;
+    height: 40vw;
+    text-align: center;
+
+  }
+  .c3-1{
+    background-color: #FCFCFC;
+    height: 35vw;
+    width: 90%;
+    display: inline-block;
+    margin: 0px auto;
+    margin-top: -1.2%;
+      box-shadow:  10px 10px 20px #ADADAD;
+  border-radius: 15px 15px;
+  opacity: 0.5;
+ 
+  }
+  .c3-1-title{
+    padding-left: 6%;
+    margin-top: 3%;
+    width: 90%;
+    height: 90px;
+    opacity: 0.1;
+    font-size: 80px;
+    text-align: left;
+  }
+  .c3-2{
+    color: black;
+    padding-top: 100px;
+    width: 50%;
+    /**background-color: red;**/
+    height: 35vw;
+    display:inline-block;
+    float: left;
+    word-wrap:break-word;
+
+  }
+    .c3-2-2{
+      padding-left: 60px;
+      padding-top: 100px;
+    width: 50%;
+   /** background-color: green;**/
+    height: 35vw;
+    display:inline-block;
+    border-left:1px solid lightgrey;
+    float: right;
+}
+.c3-2-2 ul{
+  list-style-type: decimal;
+}
+.c3-3{
+  height: 35vw;width: 50%;display: inline-block;padding-top: 80px;overflow-wrap: break-word;
+}
+.c3-3 li{
+  list-style-type: none;
+}
+.c3-3 ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+  }
+  .f1{
+    font-size: 12px;
+    width: 100%;
+    height:30vw;
+    /**background-color: #E8F2EE;**/
+    background-color: #EAF0ED;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+  }
+
+  #id_wrapper {
+  /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+  min-height: 100%;
+  height: auto;
+  /* 位置設為relative, 作為footer區塊位置的參考 */
+  position: relative;
+  }
+  #id_content {
+  /* 留出header及footer區塊的空間 */
+  padding-top: 20px;
+  padding-bottom: 210px;/*預留footer的高度*/
+  }
+
+.c2-find{
+  margin-top: 15%;
+  display: inline-block;
+  margin-left: 3%;
+  background: white;
+  height: 25vw;
+  width: 35%;
+  box-shadow: 5px 5px 40px 5px #9D9D9D;
+  border-radius: 15px 15px;
+  opacity: 0.7;
+
+  }
+  .container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+  }
+ 
+  .container-4:hover button.icon:hover{
+    background: white;
+  }
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+
+
+
+  text-align: center;
+}
+.container-1 img{
+  height: 350px;
+  width: 450px;
+
+}
+
+    .c1-2-4{
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    float: right;
+    width: 35%;
+    height:50px;
+    /**background-color: green;**/
+  }
+
+}
